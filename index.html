@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <META HTTP-EQUIV='Content-Security-Policy'
+        CONTENT="default-src 'self' ; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://use.fontawesome.com/; style-src 'self' 'unsafe-inline'; img-src data: 'self'" />
+    <link href="style.css" type="text/css" rel='stylesheet' />
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+        integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <span class="home">Carta</span>
+    </header>
+    <div id="main-container">
+        <div id="data-area">
+            <div id="file-upload-area">
+                <input type="file" id="file-upload" multiple />
+                <label for="file-upload">Click to open</label>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div class="sidebar-title">Schema</div>
+            <button class="schema-button" id="new-schema">Create New Schema</button>
+            <button class="schema-button" id="open-schema">Open Existing Schema</button>
+            <input type="file" class="hidden" id="open-schema-input" />
+        </div>
+    </div>
+</body>
+
+</html>
